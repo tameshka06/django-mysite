@@ -1,0 +1,36 @@
+# Виртуальное окружение
+venv/
+ENV/
+env/
+
+# База данных SQLite
+db.sqlite3
+
+# Логи
+*.log
+
+# Компиляция Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Статические файлы (собираются заново)
+staticfiles/
+media/
+
+# Конфиги IDE/редакторов
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Кэш
+*.cache
+*.pot
+*.pyc
+*.pyd
+*.pdb
+*.egg-info/
+dist/
+build/
