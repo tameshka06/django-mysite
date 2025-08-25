@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+{% block title %}Блоги{% endblock %}
+{% block content %}
+<h1>Список блогов</h1>
+<a href="{% url 'create_blog' %}" class="btn btn-success mb-3">Создать блог</a>
+{% for blog in blogs %}
+    <div class="card mb-3">
+        <div class="card-body">
+            <h3>{{ blog.title }}</h3>
+            <p><b>Категория:</b> {{ blog.category }}</p>
+            <p>{{ blog.description|truncatewords:20 }}</p>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}
